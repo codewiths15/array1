@@ -25,7 +25,7 @@ void display (int arr[],int len)
 
 int main()
 {
-    int arr[6]={1,4,7,3,7,9};
-    reverseArray(arr,6);
-    display(arr,6);
+    int arr[9]={1,4,7,3,7,9,55,99,77};
+    reverseArray(arr,9);
+    display(arr,9);
 }
