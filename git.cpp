@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
 
-void reversearr(int arr[],int n)
+void reverseArray(int arr[], int len)
 {
-    int rev=n;
+    int rev=len;
     int a;
-   for(int i=0; i<(n/2) ; i++)
+   for(int i=0; i<(len/2); i++)
     {
        a=arr[i];
        arr[i]=arr[rev-1];
@@ -14,9 +14,9 @@ void reversearr(int arr[],int n)
     }
 
 }
-void display (int arr[],int n)
+void display (int arr[],int len)
 {
-    for (int i=0;i<n;i++)
+    for (int i=0;i<len;i++)
     {
         cout<<arr[i]<<" ";
     }
@@ -26,10 +26,6 @@ void display (int arr[],int n)
 int main()
 {
     int arr[6]={1,4,7,3,7,9};
-
-
-    reversearr(arr,6);
+    reverseArray(arr,6);
     display(arr,6);
-
-
 }
